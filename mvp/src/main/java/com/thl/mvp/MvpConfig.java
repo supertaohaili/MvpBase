@@ -11,7 +11,7 @@ import com.thl.mvp.kit.Kits;
 public class MvpConfig {
     // #log
     public static boolean LOG = true;
-    public static String LOG_TAG = "XDroid";
+    public static String LOG_TAG = "thl";
 
     // #cache
     public static String CACHE_SP_NAME = "config";

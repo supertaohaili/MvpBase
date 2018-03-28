@@ -24,6 +24,8 @@
 
 -include proguard-eventbus-3.pro
 
+-include proguard-bugly.pro
+
 -include proguard-eventbus.pro
 
 -include proguard-glide.pro

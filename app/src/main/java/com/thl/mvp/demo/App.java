@@ -3,6 +3,7 @@ package com.thl.mvp.demo;
 import android.app.Application;
 import android.content.Context;
 
+import com.tencent.bugly.Bugly;
 import com.thl.mvp.MvpApplication;
 
 
@@ -12,18 +13,10 @@ import com.thl.mvp.MvpApplication;
 
 public class App extends MvpApplication {
 
-    private static Context context;
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        context = this;
-
-
-    }
 
     @Override
     protected void initConfig() throws Exception {
+//        Bugly.init(this, Config.BUGLY_KEY, true);   //更新与崩溃统计初始化
 
     }
 
@@ -32,7 +25,4 @@ public class App extends MvpApplication {
 
     }
 
-    public static Context getContext() {
-        return context;
-    }
 }
